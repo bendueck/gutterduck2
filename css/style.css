@@ -1,0 +1,220 @@
+@font-face {
+  font-family: 'raidersregular';
+  src: url('/Fonts/Raiders/raiders-webfont.woff2') format('woff2'),
+       url('/Fonts/Raiders/raiders-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* Formatting */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana;
+}
+
+  .content {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  
+  .titletext{
+    color: black;
+    font-size: 35px;
+    font-family: verdana;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .paragraph{
+    color: black;
+    font-size: 21px;
+    font-family: verdana;
+    font-weight: normal;
+    text-align: center;
+  }
+
+  .paragraph2{
+    color: black;
+    font-size: 21px;
+    font-family: verdana;
+    font-weight: normal;
+    text-align: left;
+    margin-left: 7rem;
+    margin-right: 7rem;
+  }
+
+.mainimage {
+ background-image:url("/Photos/gradient.png");
+ min-height: 42vw;
+ background-position: center;
+ background-size: cover;
+}
+
+.mainimage2 {
+  background-image: url("/Photos/house1.png");
+  min-height: 70vw;
+  background-position: center;
+  background-size: cover;
+ }
+
+header{
+  background: black;
+}
+
+/* below code accessed from https://www.cssscript.com/responsive-sliding-hamburge-menu/ and modified */
+
+.logo{
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: verdana;
+  letter-spacing: .91px;
+  transition: .5s ease;
+  color: white;
+  max-width: 10rem;
+  max-height: 10rem;
+}
+
+.logo:hover{
+  color: #ffd554;
+  cursor: pointer;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+li{
+  list-style: none;
+}
+
+.navbar{
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+}
+
+.nav-menu{
+  display: flex;
+  align-items: center;
+}
+
+.nav-branding{
+  font-size: 2rem;
+}
+
+/* transition for links */
+
+.nav-link{
+  transition: .5s ease;
+}
+
+.nav-link-special{
+  background-color: #ffbf00;
+  color: black;
+  padding: .5rem;
+  border: none;
+  border-radius: 77px;
+  display: inline-block;
+  transition: .5s ease;
+}
+
+.nav-link-special:hover{
+  background-color: #59c6ff;
+  color: black;
+  padding: .5rem;
+  border: none;
+  border-radius: 77px;
+  display: inline-block;
+  transition: .5s ease;
+  cursor: pointer;
+}
+
+.nav-link:hover{
+  color: #ffd554;
+  cursor: pointer;
+}
+
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+
+.bar{
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background: white;
+	border-radius: 5px;
+}
+
+.nav-item{
+  padding: 0 1.5rem;
+}
+
+@media(max-width: 760px){
+  .bar{
+    display: block;
+  }
+  .hamburger{
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1){
+    transform: rotate(45deg) translateY(11.5px); 
+  }  
+  .hamburger.active .bar:nth-child(3){
+    transform: rotate(-45deg) translateY(-11.5px); 
+  }
+  .nav-menu{
+    position: fixed;
+    right: -100%;
+    top: 70px;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background: black;
+    transition: 0.3s;
+    padding-bottom: 700rem;
+  }
+  
+  .nav-item{
+    padding: 1.5rem 0;
+  }
+  
+  .nav-menu.active{
+    right: 0;
+  }
+  
+}
+
+body {
+  background-color: white;
+}
+
+.footer {
+  background-color: black;
+  height: 3rem;
+}
+
+.footertext {
+  color: white;
+  font-size: 14px;
+  font-family: verdana;
+  text-align: center;
+  padding: 1rem;
+}
