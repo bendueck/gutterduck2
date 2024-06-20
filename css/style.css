@@ -45,8 +45,9 @@
     font-family: verdana;
     font-weight: normal;
     text-align: left;
-    margin-left: 7rem;
-    margin-right: 7rem;
+    margin-left: 2vw;
+    margin-right: 2vw;
+	font-size: 1.4rem;
   }
 
 .mainimage {
