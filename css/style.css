@@ -33,25 +33,23 @@
 
    .paragraph{
     color: black;
-    font-size: 21px;
     font-family: verdana;
     font-weight: normal;
     text-align: center;
-    margin-left: 2vw;
-    margin-right: 2vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
     font-size: 1rem;
-	   text-decoration: none;
+    text-decoration: none;
   }
 
   .paragraph2{
     color: black;
-    font-size: 21px;
     font-family: verdana;
     font-weight: normal;
     text-align: left;
-    margin-left: 2vw;
-    margin-right: 2vw;
-	font-size: 1.4rem;
+    margin-left: 1vw;
+    margin-right: 1vw;
+	font-size: 1rem;
   }
 
 .mainimage {
