@@ -31,12 +31,15 @@
     margin-bottom: 2rem;
   }
 
-  .paragraph{
+   .paragraph{
     color: black;
     font-size: 21px;
     font-family: verdana;
     font-weight: normal;
     text-align: center;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    font-size: 1.4rem;
   }
 
   .paragraph2{
